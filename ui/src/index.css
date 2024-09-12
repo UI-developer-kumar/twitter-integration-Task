@@ -1,0 +1,458 @@
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #222;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 275px 1fr 350px;
+    align-items: start;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Left Menu Styles */
+.container .left-menu {
+    background-color: #222;
+    position: relative;
+}
+
+.container .left-menu .navbar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 14px;
+    padding-top: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.container .left-menu .navbar a {
+    color: #f0f0f0;
+}
+
+.container .left-menu .navbar-brand {
+    margin: 0;
+    padding: 14px;
+}
+
+/* User Image Styles */
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.container .column-links {
+    display: inline-block;
+    flex-direction: column !important;
+}
+
+.navbar ul li a {
+    font-size: 24px;
+    color: #f0f0f0;
+}
+
+.navbar ul .nav-post-btn {
+    font-weight: bold;
+    width: 220px;
+    padding: 5px ;
+    border: none;
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 50px !important;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.navbar .loggedOut-btn {
+    font-weight: bold;
+    width: 220px;
+    padding: 12px 12px;
+    border: none;
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 50px !important;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Middle Content Styles */
+.container .middle-content {
+    height: 100vh;
+    color: #fff;
+    background: #222;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+}
+
+.container .middle-content .posts-container {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tweet-form-contaner {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tweet-form-contaner .profile-img {
+    width: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+.tweet-form-contaner img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: inherit;
+}
+
+.tweet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tweet .tweet-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tweet .tweet-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet .profile-img {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+.tweet img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.tweet .tweet-username {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 2px;
+}
+
+.tweet .tweet-username h3,
+.tweet .tweet-username h4 {
+    margin-bottom: 0;
+}
+
+.tweet p {
+    margin-bottom: 0;
+}
+
+
+
+/* ==============
+================ */
+/* Container for tweet actions */
+.tweet .tweet-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px; /* Space between content and icons */
+}
+
+/* Style for each action button */
+.tweet .tweet-action {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #555; /* Icon color */
+    font-size: 1.2rem; /* Icon size */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.tweet .tweet-action:hover {
+    color: #1da1f2; /* Change icon color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Style for icon counts */
+.tweet .tweet-action span {
+    margin-left: 5px; /* Space between icon and count */
+    font-size: 0.9rem; /* Size of the count text */
+    color: #333; /* Count text color */
+}
+
+/* Add some spacing around tweet content */
+.tweet {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Subtle border between tweets */
+}
+
+.tweet .tweet-flex {
+    flex-grow: 1; /* Allow content to use available space */
+}
+
+/* =======================
+========================== */
+
+
+
+
+
+
+.middle-content .tweet-section-container {
+    margin-top: 10px;
+}
+
+.tweet-form-contaner .form-contanier {
+    position: relative;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.tweet-form-contaner textarea {
+    background: #222;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    width: 100%;
+}
+
+.tweet-form-contaner .tweet-box:focus {
+    outline: none;
+}
+
+.form-contanier button {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    font-weight: bold;
+    padding: 7px 20px;
+    border: none;
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hidden-scrollbar {
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Feed Styles */
+.middle-content .feed-section-container {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Right Content Styles */
+.container .right-content {
+    height: 100vh;
+    background: #222;
+}
+
+/* Search Box Styles */
+.search-container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.search-container .field-flex {
+    display: flex;
+    align-items: center;
+}
+
+.search-container .field-flex input {
+    background: #222;
+}
+
+.field-flex .search-icon {
+    color: #fff;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+input[type='text'] {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    box-sizing: border-box;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.suggestion-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: none;
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    background: #222;
+    color: #fff;
+}
+
+.suggestion-list li {
+    padding: 10px;
+}
+
+.suggestion-list li:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-name {
+    font-weight: bold;
+}
+
+.suggestion-tags {
+    color: #888;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .container .left-menu .navbar {
+        justify-content: flex-start;
+    }
+
+    .container .right-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   
+
+    .container .left-menu {
+        display: flex;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 243px;
+        /* width: 275px; */
+        height: 100%;
+        background-color: #222;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease; 
+    }
+ 
+
+    .container .middle-content {
+        padding: 0px;
+        padding-top: 24px;
+        position: relative;
+    }
+
+    .container .middle-content .navbar-toggler-custom {
+        position: absolute;
+        z-index: 9;
+        top: -8px;
+        right: 35px;
+    }
+
+    .navbar {
+        display: flex;
+        /* align-items: flex-start; */
+        /* justify-content: flex-start; */
+      }
+    
+    
+
+
+}
+
+
+
+/* Add these styles to your CSS file */
+.navbar-custom {
+    position: relative;
+  }
+  
+  .navbar-toggler-custom {
+    display: none; /* Hide toggle button by default */
+    border: none;
+    color: #fff;
+    /* position: absolute;
+    top: -5px;
+    right: 30px;
+    z-index: 10; */
+    background-color: transparent;
+    font-size: 26px;
+    cursor: pointer;
+    width: 0px;
+  }
+  
+  .navbar-toggler-icon {
+    width: 0px;
+  }
+
+  
+  
+  @media (max-width: 767px) {
+    .navbar-toggler-custom {
+      display: block; /* Show toggle button on small screens */
+    }
+    
+    .navbar-collapse-custom {
+      display: none; /* Hide navbar content on small screens by default */
+    }
+  
+     .navbar-collapse-custom.show {
+        display: flex;
+        z-index: 10;
+        /* visibility: visible; */
+    }
+
+  }
