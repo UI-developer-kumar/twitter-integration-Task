@@ -1,10 +1,9 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, Outlet, useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import { logout } from '../user/loginSlice'
 import TweetForm from '../pages/TweetForm'
 import TweetFeed from '../pages/TweetFeed'
-// import SearchField from '../pages/SearchField'
 import { IoMdHome, IoIosSearch, IoIosNotificationsOutline } from 'react-icons/io'
 import { SlEnvolope } from 'react-icons/sl'
 import { FaUserGroup, FaXTwitter } from 'react-icons/fa6'
@@ -90,7 +89,6 @@ function Home() {
         <div className='right-content'>
             <SearchBox></SearchBox>
         </div>
-        {/* <Outlet></Outlet> */}
 
         
     </div>

@@ -11,10 +11,7 @@ import Home from './features/common/Home';
 import Login from './features/user/Login';
 import { Provider } from 'react-redux';
 import { store } from './App/store';
-// import Dashboard from './features/dashboard/Dashboard';
-// import WelcomePage from './features/common/WelcomePage';
 import Explore from './features/pages/Explore'
-import TweetFeed from './features/pages/TweetFeed';
 
 
 const router = createBrowserRouter([
@@ -31,12 +28,6 @@ const router = createBrowserRouter([
               path:"/explore",
               element:<Explore></Explore>
             },
-            // {
-            //   path:"/dashboard",
-            //   element:<Dashboard></Dashboard>
-            // },
-              
-
 ]);
 
 
