@@ -1,0 +1,236 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "profileImg":"https://img.freepik.com/free-photo/confident-handsome-guy-posing-against-white-wall_176420-32936.jpg?t=st=1725990096~exp=1725993696~hmac=1f928e7ee7e8ab998f63b7b282404d61f600a687184f14031de023ecead214cf&w=996",
+      "password": 123,
+      "role": "admin",
+      "mobile": 3030,
+      "id": 1
+    },
+    {
+      "username": "sonu",
+      "profileImg":"https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1725990154~exp=1725993754~hmac=c0eab3faf45e4eab158c2cf2939e889805db402ecdc7534543e083c3a2f5ef56&w=996",
+      "password": "123",
+      "role": "manager",
+      "mobile": 2020,
+      "id": 2
+    },
+    {
+      "username": "ramu",
+      "profileImg":"https://img.freepik.com/free-photo/indian-businessman-with-his-white-car_496169-2889.jpg?t=st=1725990192~exp=1725993792~hmac=892a3c7e3cc5ca09768c19658e150332862c3ba12054f0a830063c598dc6e3a7&w=360",
+      "password": "123",
+      "role": "agent",
+      "mobile": 1010,
+      "id": 3
+    },
+    {
+      "username": "nani",
+      "profileImg":"https://img.freepik.com/free-photo/japanese-business-concept-with-business-person_23-2149268017.jpg?t=st=1725990207~exp=1725993807~hmac=12d7d820555ea8d234198711cb3bd7ba954916ac5cf9cbaac2a1f45622162f74&w=360",
+      "password": "123",
+      "role": "customer",
+      "mobile": 1122,
+      "id": 4
+    },
+    {
+      "username": "sonu",
+      "password": 123,
+      "id": 5
+    },
+    {
+      "username": "sonu",
+      "password": 123,
+      "id": 6
+    },
+    {
+      "username": "sonu",
+      "password": 123,
+      "id": 7
+    },
+    {
+      "username": "sonu",
+      "password": 123,
+      "id": 8
+    },
+    {
+      "username": "ramu",
+      "password": 123,
+      "id": 9
+    },
+    {
+      "username": "sonu",
+      "password": 123,
+      "id": 10
+    },
+    {
+      "username": "sonu",
+      "password": 123,
+      "id": 11
+    },
+    {
+      "username": "sonu",
+      "password": 123,
+      "id": 12
+    },
+    {
+      "username": "sonu",
+      "password": 123,
+      "id": 13
+    },
+    {
+      "username": "ramu",
+      "password": 123,
+      "id": 14
+    }
+  ],
+  "posts": [
+    {
+      "views": 4949,
+      "id": "1",
+      "title": "redux toolkit is great"
+    },
+    {
+      "id": "c65f",
+      "views": 10984839,
+      "title": "React best training in Hyderabad"
+    },
+    {
+      "id": "d340",
+      "views": "43747",
+      "title": "React works on Mobile with React Native"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+
+  
+  "data": [
+    {
+      "id": "1234567890",
+      "text": "Just launched our new product! 🚀 Check it out at https://example.com #NewLaunch #TechInnovation",
+      "created_at": "2024-09-03T14:28:00.000Z",
+      "author_id": "12345",
+      "public_metrics": {
+        "retweet_count": 42,
+        "reply_count": 7,
+        "like_count": 117,
+        "quote_count": 3
+      },
+      "attachments": {
+        "media_keys": [
+          "7_1234567890123456789"
+        ]
+      }
+    },
+    {
+      "id": "1234567891",
+      "text": "Excited to announce I'll be speaking at @TechConf2024! Who else is going? Let's connect! #TechConf2024 #Networking",
+      "created_at": "2024-09-03T13:45:00.000Z",
+      "author_id": "67890",
+      "public_metrics": {
+        "retweet_count": 15,
+        "reply_count": 23,
+        "like_count": 89,
+        "quote_count": 1
+      }
+    },
+    {
+      "id": "1234567892",
+      "text": "Just watched an amazing sunset. Nature never fails to inspire! 🌅 #NaturePhotography",
+      "created_at": "2024-09-03T12:30:00.000Z",
+      "author_id": "13579",
+      "public_metrics": {
+        "retweet_count": 5,
+        "reply_count": 2,
+        "like_count": 76,
+        "quote_count": 0
+      },
+      "attachments": {
+        "media_keys": [
+          "7_9876543210987654321"
+        ]
+      }
+    },
+    {
+      "id": "1234567893",
+      "text": "Thread: 5 tips for improving your coding skills:\n\n1. Practice regularly\n2. Read others' code\n3. Contribute to open source\n4. Learn new languages\n5. Teach others\n\nWhat would you add to this list? #CodingTips #SoftwareDevelopment",
+      "created_at": "2024-09-03T11:15:00.000Z",
+      "author_id": "24680",
+      "public_metrics": {
+        "retweet_count": 128,
+        "reply_count": 45,
+        "like_count": 315,
+        "quote_count": 12
+      }
+    },
+    {
+      "id": "1234567894",
+      "text": "RT @TechNews: Breaking: Major security vulnerability discovered in popular software. Update your systems immediately. Details: https://tech.news/security-alert",
+      "created_at": "2024-09-03T10:00:00.000Z",
+      "author_id": "11223",
+      "public_metrics": {
+        "retweet_count": 1024,
+        "reply_count": 89,
+        "like_count": 412,
+        "quote_count": 76
+      }
+    }
+  ],
+  "includes": {
+    "users": [
+      {
+        "id": "12345",
+        "name": "Tech Innovator",
+        "username": "techinnovator"
+      },
+      {
+        "id": "67890",
+        "name": "Conference Speaker",
+        "username": "confspeaker"
+      },
+      {
+        "id": "13579",
+        "name": "Nature Lover",
+        "username": "naturelover"
+      },
+      {
+        "id": "24680",
+        "name": "Coding Guru",
+        "username": "codingguru"
+      },
+      {
+        "id": "11223",
+        "name": "Tech Enthusiast",
+        "username": "techenthusiast"
+      }
+    ],
+    "media": [
+      {
+        "media_key": "7_1234567890123456789",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/product_launch.jpg"
+      },
+      {
+        "media_key": "7_9876543210987654321",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/sunset_photo.jpg"
+      }
+    ]
+  },
+  "meta": {
+    "result_count": 5,
+    "newest_id": "1234567890",
+    "oldest_id": "1234567894",
+    "next_token": "7140dibdnow9c7btw3w29n4v9g9mmsc"
+  }
+}
